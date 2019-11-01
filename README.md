@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a Node.js framework which makes building RESTful APIs very easy. It is very lightweight and supports a lot of middlewares to accomplish a lot of tasks.
+
 - [ ] Describe Middleware?
+
+Middleware are functions which have access to the request and response body. They may or may not modify the request and response body based on how these functions are used. Middlewares can be used both locally and globally.
 
 - [ ] Describe a Resource?
 
+Resource refers to data needed for an application. For eg. in our today's assignment there were two resources actions and projects.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+APIs return a status code which tell the client that a request was successful. 200 stands for OK and 201 for Created.
+
 - [ ] How can we partition our application into sub-applications?
+
+We can partition applications by using Router. Router helps us write endpoints in different files which ensures modularity. Then these endpoints can be imported into the main file and can be used as needed by the clients.
 
 ## Project Setup
 
