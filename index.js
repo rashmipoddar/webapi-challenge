@@ -16,11 +16,13 @@ Go code!
 const express = require('express')
 
 const projectRoutes = require('./routes/projectRoutes');
+const actionRoutes = require('./routes/actionRoutes');
 
 const server = express();
 
 server.use(express.json());
 server.use('/api/projects', projectRoutes);
+server.use('/api/actions', actionRoutes);
 
 server.get('/', (req, res) => {
   res.status(200).send('Please go to /api/projects');
