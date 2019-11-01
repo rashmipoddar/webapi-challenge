@@ -18,16 +18,18 @@ function App() {
   }, [])
 
   return (
-    <div>
-      <h1>Projects</h1>
-      {projects && projects.map(project => {
-        return(
-          <div key={project.id}>
-            <h1>{project.name}</h1>
-            <h3>{project.description}</h3>
-          </div>
-        )
-      })}
+    <div className='container'>
+      <h1 className='header'>Projects</h1>
+      <div className='projectContainer'>
+        {projects && projects.map(project => {
+          return(
+            <div className='projects' key={project.id}>
+              <h1>{project.name}</h1>
+              <h3>{project.description}</h3>
+            </div>
+          )
+        })}
+      </div>
     </div>
   );
 }
