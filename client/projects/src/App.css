@@ -1,0 +1,19 @@
+body {
+  background-color: #E6E6FA;
+}
+
+.header {
+  text-align: center;
+}
+
+.projectContainer {
+  display: flex;
+}
+
+.projects {
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
